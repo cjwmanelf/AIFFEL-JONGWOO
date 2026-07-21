@@ -2,7 +2,7 @@
 - 코더 : 이인석
 - 리뷰어 : 최종우
 
-> 리뷰 대상 : https://github.com/cjwmanelf/dessert-shop-backend (수제 디저트 선물샵 백엔드, FastAPI + Supabase)
+> 리뷰 대상 : https://github.com/inseoklee-ai/dessert-shop-backend (수제 디저트 선물샵 백엔드, FastAPI + Supabase)
 > 평가 기준 : ① 보안 검토가 잘 되어 있고 실제로도 문제가 없는가 ② 실제 배포된 백엔드가 의도대로 동작하는가 ③ 서비스가 직관적이고 의도대로 잘 동작하는가
 > 검증 방법 : 소스 코드 정독 + 배포 API(`https://dessert-shop-backend.onrender.com`)에 실제 요청을 보내 응답을 확인
 
