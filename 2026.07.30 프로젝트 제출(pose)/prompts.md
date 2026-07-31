@@ -6,6 +6,7 @@
 ## 포즈controlnet이용 pose_01 -> output_01
 프롬프트: 가게에 남자가 팔짱끼고있는 사진 만들어줘
 
+
 # pose_02 -> output_02
 
 ## pose_02 생성
