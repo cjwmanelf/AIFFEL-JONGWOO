@@ -18,7 +18,8 @@
 
    [16]번셀 Gradio UI 실행 셀 : 사용자가 프롬프트와 포즈 사진을 입력해 이미지를 생성할 수 있는 웹 UI 링크를 출력합니다.  
 
-3. Google Colab 세션 저장소 (파일 탐색기), /content/ComfyUI/output/ 폴더
+3. (1) Google Colab 세션 저장소 (파일 탐색기),
+   (2) /content/ComfyUI/output/ 폴더
 
 ## 테스트 결과
 - 포즈 1: [팔짱낀자세] → 프롬프트: [가게에 남자가 팔짱끼고있는 사진 만들어줘] → 결과: [잘 됨]
