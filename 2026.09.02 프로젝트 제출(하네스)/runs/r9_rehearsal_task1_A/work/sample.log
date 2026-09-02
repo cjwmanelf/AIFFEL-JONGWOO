@@ -1,0 +1,30 @@
+2026-08-31 09:14:02 INFO  svc=api  req=a1f0 path=/health status=200 dur_ms=3
+2026-08-31 09:14:05 INFO  svc=api  req=a1f1 path=/v1/orders status=200 dur_ms=88
+2026-08-31 09:14:07 ERROR svc=api  req=a1f2 path=/v1/orders code=E401 msg="token expired"
+2026-08-31 09:14:07 INFO  svc=api  req=a1f2 msg="retrying after ERROR from upstream"
+2026-08-31 09:14:09 WARN  svc=api  req=a1f3 path=/v1/orders code=E500 msg="slow upstream, will retry"
+2026-08-31 09:14:11 INFO  svc=api  req=a1f3 path=/v1/orders status=200 dur_ms=910
+2026-08-31 09:15:00 INFO  svc=cron req=b200 job=sync-inventory status=start
+2026-08-31 09:15:04 ERROR svc=cron req=b201 job=sync-inventory code=E500 msg="db connection reset"
+2026-08-31 09:15:06 ERROR svc=cron req=b202 job=sync-inventory code=E500 msg="db connection reset"
+2026-08-31 09:15:09 INFO  svc=cron req=b203 job=sync-inventory status=retry attempt=2
+2026-08-31 09:15:14 ERROR svc=cron req=b204 job=sync-inventory code=E500 msg="db connection reset"
+2026-08-31 09:15:20 WARN  svc=cron req=b205 job=sync-inventory msg="giving up after 3 ERROR entries"
+2026-08-31 09:20:31 INFO  svc=web  req=c310 path=/login status=200 dur_ms=41
+2026-08-31 09:20:38 ERROR svc=web  req=c311 path=/v1/profile code=E401 msg="token expired"
+2026-08-31 09:20:39 INFO  svc=web  req=c312 path=/login status=302 dur_ms=25
+2026-08-31 09:21:02 ERROR svc=web  req=c313 path=/static/logo.png code=E404 msg="asset not found"
+2026-08-31 09:21:03 DEBUG svc=web  req=c313 msg="code=E404 handler invoked"
+2026-08-31 09:21:44 INFO  svc=api  req=a1f8 path=/v1/orders status=201 dur_ms=120
+2026-08-31 09:22:10 ERROR svc=api  req=a1f9 path=/v1/orders/9912 code=E404 msg="order not found"
+2026-08-31 09:22:51 WARN  svc=api  req=a200 path=/v1/orders msg="rate limit at 80%"
+2026-08-31 09:23:07 ERROR svc=api  req=a201 path=/v1/payments code=E502 msg="pg gateway timeout"
+2026-08-31 09:23:12 INFO  svc=api  req=a202 path=/v1/payments status=200 dur_ms=740
+2026-08-31 09:31:19 ERROR svc=web  req=c320 path=/v1/profile code=E401 msg="token expired"
+2026-08-31 09:31:25 INFO  svc=web  req=c321 path=/logout status=204 dur_ms=12
+2026-08-31 09:40:02 INFO  svc=api  req=a300 path=/health status=200 dur_ms=2
+2026-08-31 09:41:33 ERROR svc=api  req=a301 path=/v1/orders code=E401 msg="token expired"
+2026-08-31 09:41:35 INFO  svc=api  req=a302 path=/v1/orders status=200 dur_ms=95
+2026-08-31 09:44:18 WARN  svc=cron req=b300 job=cleanup msg="skipped, lock held"
+2026-08-31 09:50:00 INFO  svc=cron req=b400 job=report status=start
+2026-08-31 09:50:41 INFO  svc=cron req=b401 job=report status=done rows=1204
